@@ -1,0 +1,25 @@
+<div class="inputform">
+  <div class="container">
+    <%= form_with(model: @stock, local: true) do |form| %>
+      <div class="field">
+        <%= form.text_field :area, placeholder: "都道府県名", class: :form_text %>
+      </div>
+      <div class="field">
+        <%= form.text_field :store_name, placeholder: "店名", class: :form_text %>
+      </div>
+      <div class="field">
+        <%= form.text_field :product, placeholder: "商品名", class: :form_text %>
+      </div>
+      <div class="field">
+        <%= form.text_field :lottery, placeholder: "景品名", class: :form_text %>
+      </div>
+      <div class="field">
+        <%= form.text_area :comment, placeholder: "コメント", class: :form_text %>
+      </div>
+      <div class="submit">
+        <%= form.submit "送信", class: :submit_btn %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "もどる", root_path %>
+</div>

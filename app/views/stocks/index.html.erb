@@ -1,0 +1,16 @@
+トップページ
+<%= link_to '投稿', new_stock_path %>
+
+<div class="contents">
+  <% @stocks.each do |stock| %>
+    <div class="content">
+      <ul class = "lists">
+        <li class="list"><%= stock.area%></li>
+        <li class="list"><%= stock.store_name %></li>
+        <li class="list"><%= stock.product %></li>
+        <li class="list"><%= stock.lottery %></li>
+        <li class="list"><%= stock.comment %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
