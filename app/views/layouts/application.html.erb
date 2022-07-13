@@ -10,6 +10,21 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="left-header">
+        Bankuji App
+      </div>
+      <div class="right-header">
+        <% if user_signed_in?%>
+          <%= current_user.nickname %>
+          <%= link_to '投稿', new_stock_path %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to '新規登録', new_user_registration_path %>
+          <%= link_to 'ログイン', new_user_session_path %>
+        <% end %>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
