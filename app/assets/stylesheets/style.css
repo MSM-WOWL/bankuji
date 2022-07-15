@@ -1,0 +1,58 @@
+.header{
+  background-color: lightslategray;
+  display: flex;
+  justify-content: space-between;
+  border: black solid 2px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.left-header{
+ margin-left: 10px;
+}
+
+.right-header{
+  margin-right: 10px;
+}
+
+.contents{
+  display: block;
+ }
+ 
+ .content{
+  background-color: gray;
+  border: black solid 2px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+ }
+ 
+ .list{
+   list-style: none;
+ }
+
+ .container{
+   display: flex;
+   justify-content: center;
+ }
+
+.field{
+  margin-bottom: 10px;
+}
+
+.form_text{
+  width: 500px;
+  height: 50px;
+  border: black solid 2px;
+  border-radius: 5px;
+}
+
+.submit_btn{
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.good-icon{
+  width: 30px;
+  height: 30px;
+}

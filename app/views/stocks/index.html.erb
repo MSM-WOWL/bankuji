@@ -1,0 +1,17 @@
+<div class="contents">
+  <% @stocks.each do |stock| %>
+    <div class="content">
+      <ul class = "lists">
+        <li class="list"><%= stock.area%></li>
+        <li class="list"><%= stock.store_name %></li>
+        <li class="list"><%= stock.product %></li>
+        <li class="list"><%= stock.lottery %></li>
+        <li class="list"><%= stock.comment %></li>
+        <li class="list"><%= stock.user.nickname %></li>
+        <li class="list"><span id='good-point' >0</span>いいね</li>
+        <li class="list"><%= image_tag 'good.png', class: "good-icon", id: "good-icon" %></li>
+      </ul>
+    </div>
+  <% end %>
+  
+</div>
