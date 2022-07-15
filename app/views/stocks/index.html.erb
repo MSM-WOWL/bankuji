@@ -8,7 +8,8 @@
         <li class="list"><%= stock.lottery %></li>
         <li class="list"><%= stock.comment %></li>
         <li class="list"><%= stock.user.nickname %></li>
-        <li class="list"><%= image_tag 'good.png', class: "good-icon"%><% id='goodpoint' %>いいね</li>
+        <li class="list"><span id='good-point' >0</span>いいね</li>
+        <li class="list"><%= image_tag 'good.png', class: "good-icon", id: "good-icon" %></li>
       </ul>
     </div>
   <% end %>
